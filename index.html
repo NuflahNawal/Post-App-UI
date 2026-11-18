@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b3614e4fbc.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar md:navbar-expand nav bgColor">
+        <div class="container">
+            <a class="navbar-brand fs-xl" href="#"><strong>PostHub</strong></a>
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer"
+                aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
+                <div class="drawer-body mb-2 md:mb-0">
+                    <ul class="nav navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html"><b>Home</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="post.html"><i class="fa-solid fa-plus"></i><b>Post</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="signUp.html"><b>SignUp / LogIn</b></a>
+                        </li>
+                        <!-- <li>
+                            <i class="fa-solid fa-circle-half-stroke mode" onclick="changeMode(this)"></i>
+                        </li> -->
+                    </ul>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="heading">
+            <h4><em>"Don’t just scroll drop your thoughts, updates, or latest wins here!"</em></h4>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-7 col-lg-8" id="postContainer">
+            </div>
+
+
+            <div class="col-12 col-md-5 col-lg-4 m-4">
+                <div class="mb-3">
+                    <div class="card">
+                        <div class="card-header headingColor">
+                            @blog
+                        </div>
+                        <div class="card-body color">
+                            <div class="title">
+                                <b>Why Building Small Projects Is the Fastest Way to Learn</b>
+                            </div>
+                            <figure>
+                                <blockquote class="blockquote">
+                                    <p>Watching tutorials feels productive, until you open a blank editor and realize you don’t know where to start. That gap only closes when you start building things on your own—even if they’re tiny. <br>
+
+                                    Start with something simple like a basic calculator, a to-do list, or a personal landing page. You’ll run into broken layouts, unexpected bugs, and moments of pure frustration—and that’s the exact part where real learning happens. Every small project you finish gives you the confidence to tackle the next one.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    Zainab Malik | Date: November 19, 2026 
+                                </figcaption>
+                            </figure>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-5 col-lg-4 m-4">
+                <div class="mb-3">
+                    <div class="card">
+                        <div class="card-header headingColor">
+                            @blog
+                        </div>
+                        <div class="card-body color">
+                            <div class="title">
+                                <b>A Weekend Escape to the Northern Mountains</b>
+                            </div>
+                            <figure>
+                                <blockquote class="blockquote">
+                                    <p>Sometimes all you need is fresh mountain air and zero Wi-Fi to reset your mind. Last weekend, I packed a small backpack and headed north to explore quiet trails, wooden cabins, and steaming cups of chai overlooking misty valleys. <br>
+
+                                    The best part wasn’t even the famous viewpoints—it was the slow mornings, friendly locals, and realizing how little we actually need to feel completely at peace. If you’ve been feeling burned out lately, consider this your sign to plan a short getaway.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    Hamza Tariq | Date: November 12, 2026
+                                </figcaption>
+                            </figure>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-5 col-lg-4 m-4">
+                <div class="mb-3">
+                    <div class="card">
+                        <div class="card-header headingColor">
+                            @blog
+                        </div>
+                        <div class="card-body color">
+                            <figure>
+                                <div class="title">
+                                    <b>5 Simple Habits That Made Me a Better Developer </b>
+                                </div>
+                                <blockquote class="blockquote">
+                                    <p>Writing clean code isn’t about knowing every complex trick—it’s about consistency. Over the past few months, breaking big problems into tiny steps, naming my files properly, and taking short breaks when stuck completely changed how I build projects. Whether you’re just starting out or debugging your tenth project, keeping things simple always wins.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    Sara Ahmed | Date: November 18, 2026
+                                </figcaption>
+                            </figure>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
