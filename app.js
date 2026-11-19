@@ -97,6 +97,11 @@ function deletePost() {
     card.remove()
 }
 
+function editPost() {
+    var card = event.target.parentNode.parentNode.parentNode
+    var title = card.children
+}
+
 function post() {
     var date = new Date()
     var title = document.getElementById("title")
@@ -152,7 +157,7 @@ window.onload = function() {
                                 </figure>
 
                                 <div class="ms-auto m-2">
-                                    <button class="btn bgColor px-5">Edit</button>
+                                    <button class="btn bgColor px-5" onclick="editPost()">Edit</button>
                                     <button class="btn bg-danger fg-white" onclick="deletePost()">Delete</button>
                                 </div>
                             </div>
@@ -162,3 +167,8 @@ window.onload = function() {
         }
     }
 };
+
+function selectImg (src) {
+    console.log(src);
+    
+} 
